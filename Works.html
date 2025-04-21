@@ -77,8 +77,8 @@
         const finalHeight = y + 10; // немного отступа
         pdf.internal.pageSize.height = finalHeight;
 
-        codes.forEach((code, i) => {
-  if (i > 0) pdf.addPage([30, 40], "landscape");
+        //codes.forEach((code, i) => {
+  //if (i > 0) pdf.addPage([30, 40], "landscape");
 
   pdf.text(`Номер образца: ${code}`, 4, 8);
   pdf.text(`Дата: ${data.date}`, 4, 13);
