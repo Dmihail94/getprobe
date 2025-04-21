@@ -41,6 +41,16 @@
           alert("Ошибка отправки в таблицу!");
           return;
         }
+        function drawWrappedText(doc, label, value, x, y, maxWidth, maxLines = 2) {
+          const lineHeight = 4;
+          doc.setFont(undefined, 'bold');
+          doc.text(`${label}:`, x, y);
+          const lines = doc.splitTextToSize(value, maxWidth);
+          doc.setFont(undefined, 'normal');
+          lines.slice(0, maxLines).forEach((line, i) => {
+            doc.text(line, x + 12, y + (i * lineHeight));});
+          return y + Math.min(lines.length, maxLines) * lineHeight + 1;
+        }
 
         const { jsPDF } = window.jspdf;
         const pdf = new jsPDF({ orientation: "landscape", unit: "mm", format: [30, 40] });
