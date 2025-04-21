@@ -12,6 +12,7 @@
 <input name="customer" placeholder="Заказчик" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
 <input name="object" placeholder="Объект" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
 <input name="mark" placeholder="Марка" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
+<input name="element" placeholder="Конструктивный элемент" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
 <input name="count" placeholder="Количество образцов" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="number"/>
 <button style="width: 300px; padding: 8px; font-size: 14px;" type="submit">Сформировать PDF</button>
 </form>
@@ -29,6 +30,7 @@
           customer: form.customer.value,
           object: form.object.value,
           mark: form.mark.value,
+          element: form.element.value,
           count: parseInt(form.count.value)
         };
 
