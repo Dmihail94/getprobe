@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 
+
+//<label for="customer">Заказчик</label>
+<input type="text" name="customer" id="customer" required>//
+
 <html lang="ru">
 <head>
 <meta charset="utf-8"/>
@@ -8,12 +12,18 @@
 </head>
 <body>
 <form id="concreteForm" style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 30px;">
+<label for="date">Дата отбора</label>  
 <input name="date" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="date"/>
-<input name="customer" placeholder="Заказчик" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
-<input name="object" placeholder="Объект" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
-<input name="mark" placeholder="Марка" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
-<input name="element" placeholder="Конструктивный элемент" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
-<input name="count" placeholder="Количество образцов" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="number"/>
+<label for="customer">Заказчик</label>  
+<input name="customer" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
+<label for="object">Объект строительствак</label>
+<input name="object" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
+<label for="mark">Марка бетона</label>
+<input name="mark" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
+<label for="element">Конструктивный элемент</label>
+<input name="element" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="text"/>
+<label for="count">Количество образцов</label>
+<input name="count" required="" style="width: 300px; padding: 8px; font-size: 14px;" type="number"/>
 <button style="width: 300px; padding: 8px; font-size: 14px;" type="submit">Сформировать PDF</button>
 </form>
 <script>
